@@ -11,7 +11,7 @@ It is also **not** a tape-out, a synthesizable core, Verilog, an FPGA bitstream,
 - 8 general-purpose registers (`r0`–`r7`), 8-bit, wrapping arithmetic
 - Seven ops: `ADD`, `SUB`, `AND`, `OR`, `XOR`, `MOV`, `HALT`
 - Fetch → decode → execute in `Cpu::step`
-- Proof: `cargo test`
+- Proof: `cargo test` (27 tests) and `cargo run --example demo`
 
 ## ISA
 
@@ -42,7 +42,10 @@ Load values with `Cpu::set_reg`, then run instruction words.
 
 ```bash
 cargo test
+cargo run --example demo
 ```
+
+CI (GitHub Actions) runs both on every push and pull request.
 
 ## License
 
