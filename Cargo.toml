@@ -1,0 +1,12 @@
+[package]
+name = "fromthetransistor"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "One educational slice: a tiny 8-register CPU emulator. Not the full fromthetransistor curriculum."
+repository = "https://github.com/RanaPriyansh/fromthetransistor"
+readme = "README.md"
+keywords = ["emulator", "cpu", "isa", "education"]
+categories = ["emulators", "simulation"]
+
+[dependencies]
